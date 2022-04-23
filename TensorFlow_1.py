@@ -13,10 +13,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import sklearn
-import urllib
-import csv
 
 
-dataset = "https://github.com/ageron/handson-ml/blob/master/datasets/lifesat/oecd_bli_2015.csv"
-res = urllib.urlopen(dataset)
-data = csv.reader(res)
+dataset = "/Users/jinzhang/ML_Projects/handson-ml/datasets/lifesat/oecd_bli_2015.csv"
+data = pd.read_csv(dataset,thousands=',')
